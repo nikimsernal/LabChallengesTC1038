@@ -1,6 +1,5 @@
 def main():
-    #n = int(input())
-    n = 1865
+    n = int(input())
     
     ballenas = n//500
     n -= ballenas*500
