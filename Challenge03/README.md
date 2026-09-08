@@ -64,6 +64,10 @@ You may print the message as you wish, but here's an example of  what it may loo
 ```
 Given a COVID-19 incidence of 5.00%, the Rapid Antigen Test has a PPV of 64.81%
 ```
+Assuming you stored the incidence in a variable called `inc` and the PPV for the Antigen test in a variable called `antigen_PPV`, tou may use a the following f-string: 
+```
+print(f"Given a COVID-19 incidence of {inc*100:.2f}%, the Rapid Antigen Test has a PPV of {antigen_ppv*100:.2f}%")
+```
 
 # 🟡 Challenge 4 Incidence as a Prior Belief
 
