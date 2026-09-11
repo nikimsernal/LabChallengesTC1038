@@ -84,9 +84,16 @@ Please provide a valid temperature unit from the following options: C, F or K.
 
 Financial institutions use rule-based engines to evaluate loan applications. Write a complete credit evaluation program that uses functions to calculate two key financial ratios and assign a risk tier. You will use the following metrics
 1. **Debt-to-Income (DTI) Ratio:**
-    $$\text{DTI} = \frac{\text{monthly\_debt}}{\text{monthly\_income}}$$
+
+$$
+\text{DTI} = \frac{\text{monthly debt}}{\text{monthly income}}
+$$
+
 2. **Loan-to-Value (LTV) Ratio:**
-    $$\text{LTV} = \frac{\text{requested\_loan}}{\text{collateral\_value}}$$
+
+$$
+\text{LTV} = \frac{\text{requested loan}}{\text{collateral value}}
+$$
 
 According to these metrics, you may classify the risks as:
 
@@ -138,7 +145,7 @@ A player encounters a monster. The player can choose an action: `"attack"`, `"ma
 2. **Monster Stats:** `monster_health` (0–100), `monster_attack`.
 3. **Actions:**
     - `"attack"`: Deals player's `attack_power` to monster. Monster counter-attacks for full `monster_attack`.
-    - `"magic"`: Costs 15 `mana`. Deals $2.5 \times \text{attack\_power}$ to the monster. Monster counter-attacks for half `monster_attack`. (If player has $< 15$ mana, the spell fails, player loses turn, and monster hits for full attack!).
+    - `"magic"`: Costs 15 `mana`. Deals $2.5 \times$ `attack_power` to the monster. Monster counter-attacks for half `monster_attack`. (If player has $< 15$ mana, the spell fails, player loses turn, and monster hits for full attack!).
     - `"heal"`: Restores 30 `health` (max cap 100). Monster counter-attacks for half `monster_attack`.
 
 ### Objective
